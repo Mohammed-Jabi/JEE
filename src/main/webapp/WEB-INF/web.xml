@@ -9,4 +9,15 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>callProgram1</servlet-name>
+  <servlet-class>com.jee.logic.Program1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>callProgram1</servlet-name>
+  <url-pattern>/calluser</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
