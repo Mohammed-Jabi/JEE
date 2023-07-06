@@ -15,6 +15,11 @@ public class Product extends HttpServlet	{
 			int num2 = Integer.parseInt(req.getParameter("num2"));
 			
 			PrintWriter out=res.getWriter();
+			
+			Object sum = req.getAttribute("mySum");
+			out.println("Sum = "+sum);
+			
+			
 			out.println("Product is : "+(num1*num2));
 			
 			

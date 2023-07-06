@@ -1,43 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>JEE1</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-  </welcome-file-list>
-  
-  <servlet>
-  <servlet-name>callProgram1</servlet-name>
-  <servlet-class>com.jee.logic.Program1</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>callProgram1</servlet-name>
-  <url-pattern>/calluser</url-pattern>
-  </servlet-mapping>
-  
-   <servlet>
-  <servlet-name>addition</servlet-name>
-  <servlet-class>com.jee.logic.Addition</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>addition</servlet-name>
-  <url-pattern>/callcalc</url-pattern>
-  </servlet-mapping>
-  
-     <servlet>
-  <servlet-name>product</servlet-name>
-  <servlet-class>com.jee.logic.Product</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>product</servlet-name>
-  <url-pattern>/product</url-pattern>
-  </servlet-mapping>
-  
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>JEE1</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>callProgram1</servlet-name>
+		<servlet-class>com.jee.logic.Program1</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>callProgram1</servlet-name>
+		<url-pattern>/calluser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addition</servlet-name>
+		<servlet-class>com.jee.logic.Addition</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addition</servlet-name>
+		<url-pattern>/callcalc</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>product</servlet-name>
+		<servlet-class>com.jee.logic.Product</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>product</servlet-name>
+		<url-pattern>/product</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>callredirect</servlet-name>
+		<servlet-class>com.jee.logic.RedirectMain</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>callredirect</servlet-name>
+		<url-pattern>/callredirect</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>callrdirect</servlet-name>
+		<servlet-class>com.jee.logic.Redirect</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>callrdirect</servlet-name>
+		<url-pattern>/rdirect</url-pattern>
+	</servlet-mapping>
+
 </web-app>

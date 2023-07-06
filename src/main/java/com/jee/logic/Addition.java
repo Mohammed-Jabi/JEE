@@ -16,12 +16,18 @@ public class Addition extends HttpServlet	{
 		int num1=Integer.parseInt(req.getParameter("num1"));
 		int num2=Integer.parseInt(req.getParameter("num2"));
 		
-		PrintWriter out = res.getWriter();
-		out.println("The sum is: "+(num1+num2) );
+		//coment the below line if u are using the include method
+		int sum = num1+num2;
 		
+		PrintWriter out = res.getWriter();
+		//out.println("The sum is: "+(num1+num2) );
+		
+		//coment the below line if u are using the include method
 		RequestDispatcher rd=req.getRequestDispatcher("product");
-		//rd.forward(req, res);//forward will not consider the current page uotput and it will move next page
-		rd.include(req,res);
+		
+		req.setAttribute("mySum", sum);
+		rd.forward(req, res);//forward will not consider the current page uotput and it will move next page
+		//rd.include(req,res);
 		
 		
 	}
